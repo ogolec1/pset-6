@@ -104,7 +104,7 @@ const runModificationFunctions = function() {
 };
 
 const createItem = function() {
-  let input = document.getElementById("enterText").value;
+  let input = document.getElementById("enterTask").value;
   if (input === "") {} else {
     let object = {
       task: input,
@@ -140,5 +140,5 @@ const createItem = function() {
     elements[x].append(items[x].htmlRemoveButton);
 
   }
-  document.getElementById("enterText").value = "";
+  document.getElementById("enterTask").value = "";
 };
