@@ -17,7 +17,6 @@ window.onload = function() {
 
 const prioritizeItem = function() {
   priorityChanged = false;
-
   for (let i = 0; i < priorityButtons.length; i++) {
     priorityButtons[i].onclick = function() {
       if (items[i].prioritized === false) {
