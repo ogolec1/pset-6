@@ -10,9 +10,9 @@ let completedButtons = document.getElementsByClassName("completed");
 let removeButtons = document.getElementsByClassName("remove");
 
 window.onload = function() {
-  document.getElementById("task-table").onclick = runModificationFunctions;
+  document.getElementById("tasks").onclick = runModificationFunctions;
 
-  document.getElementById("submit-input").onclick = createItem;
+  document.getElementById("input").onclick = createItem;
 };
 
 const prioritizeItem = function() {
@@ -104,7 +104,7 @@ const runModificationFunctions = function() {
 };
 
 const createItem = function() {
-  let input = document.getElementById("enter-input").value;
+  let input = document.getElementById("enterInput").value;
   if (input === "") {} else {
     let object = {
       task: input,
@@ -122,7 +122,7 @@ const createItem = function() {
 
     items[x].htmlRow = document.createElement("tr");
     items[x].htmlRow.setAttribute("class", "row");
-    document.getElementById("task-table").append(items[x].htmlRow);
+    document.getElementById("tasks").append(items[x].htmlRow);
 
     items[x].htmlPriorityButton = document.createElement("td");
     items[x].htmlPriorityButton.setAttribute("class", "priority");
@@ -140,5 +140,5 @@ const createItem = function() {
     elements[x].append(items[x].htmlRemoveButton);
 
   }
-  document.getElementById("enter-input").value = "";
+  document.getElementById("enterInput").value = "";
 };
