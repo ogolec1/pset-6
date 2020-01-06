@@ -63,6 +63,7 @@ const markAsComplete = function() {
         if (items[i].prioritized) {
           prioritizeItem();
         }
+        
       } else if (items[i].completed) {
         completedButtons[i].style.setProperty("text-decoration", "none");
         completedButtons[i].style.backgroundColor = "transparent";
