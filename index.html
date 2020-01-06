@@ -1,38 +1,37 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title> To-Do List </title>
+    <link rel="stylesheet" href="css\styles.css">
+    <script type="text/javascript" src="js\app.js"> </script>
+  </head>
 
-<head>
-  <title> To-Do List </title>
-  <link rel="stylesheet" href="css\styles.css">
-  <script type="text/javascript" src="js\app.js"> </script>
-</head>
+  <body>
+    <h1>[ TODO LIST ]</h1>
 
-<body>
-  <h1>[ TODO LIST ]</h1>
-
-  <h3> Manage your stressful days by using this efficient To-Do List. </h3>
-  <h3> Type all your tasks down and press the "Add" button. </h3>
-  <h3>
-    <li>Click on the "!" button to prioritize a task.
-  </h3>
-  <h3>
-    <li>Click on the "X" to delete a task.
-  </h3>
-  <h3>
-    <li>Click on the task when you have completed the task.
-  </h3>
-
+    <h3> Manage your stressful days by using this efficient To-Do List. </h3>
+    <h3> Type all your tasks down and press the "Add" button. </h3>
+    <h3>
+      <li>Click on the "!" button to prioritize a task.
+    </h3>
+    <h3>
+      <li>Click on the "X" to delete a task.
+    </h3>
+    <h3>
+      <li>Click on the task when you have completed the task.
+    </h3>
   <table class="input-table">
     <tr>
       <td>
-        <input type="text" id="enterText" />
+        <input type="text" id="enter-input" />
       </td>
       <td>
-        <button id="putTask"> ADD </button>
+        <button id="submit-input"> ADD </button>
       </td>
     </tr>
   </table>
-  <table id="usersTasks"></table>
+
+  <table id="task-table"></table>
 
 </body>
 

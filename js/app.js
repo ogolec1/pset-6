@@ -10,9 +10,9 @@ let completedButtons = document.getElementsByClassName("completed");
 let removeButtons = document.getElementsByClassName("remove");
 
 window.onload = function() {
-  document.getElementById("usersTasks").onclick = runModificationFunctions;
+  document.getElementById("task-table").onclick = runModificationFunctions;
 
-  document.getElementById("enterText").onclick = createItem;
+  document.getElementById("submit-input").onclick = createItem;
 };
 
 const prioritizeItem = function() {
@@ -63,7 +63,6 @@ const markAsComplete = function() {
         if (items[i].prioritized) {
           prioritizeItem();
         }
-
       } else if (items[i].completed) {
         completedButtons[i].style.setProperty("text-decoration", "none");
         completedButtons[i].style.backgroundColor = "transparent";
@@ -97,6 +96,7 @@ const removeItem = function() {
     }
   }
 }
+
 const runModificationFunctions = function() {
   prioritizeItem();
   markAsComplete();
@@ -104,7 +104,7 @@ const runModificationFunctions = function() {
 };
 
 const createItem = function() {
-  let input = document.getElementById("enterTask").value;
+  let input = document.getElementById("enter-input").value;
   if (input === "") {} else {
     let object = {
       task: input,
@@ -122,7 +122,7 @@ const createItem = function() {
 
     items[x].htmlRow = document.createElement("tr");
     items[x].htmlRow.setAttribute("class", "row");
-    document.getElementById("usersTasks").append(items[x].htmlRow);
+    document.getElementById("task-table").append(items[x].htmlRow);
 
     items[x].htmlPriorityButton = document.createElement("td");
     items[x].htmlPriorityButton.setAttribute("class", "priority");
@@ -140,5 +140,5 @@ const createItem = function() {
     elements[x].append(items[x].htmlRemoveButton);
 
   }
-  document.getElementById("enterTask").value = "";
+  document.getElementById("enter-input").value = "";
 };
