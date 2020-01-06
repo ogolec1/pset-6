@@ -11,6 +11,7 @@ h1 {
     text-align: center;
     font-size: 80px;
     margin-top: 15px;
+    color: #039BE5;
 }
 
 table {
@@ -28,7 +29,35 @@ td {
 }
 
 h3{
-  text-align: center;
-  font-size: 40px;
+  text-align: cen;
+  font-size: 15px;
   margin-top: 15px;
+  text-align: center;
+  font-family: "Courier New";
+}
+
+button {
+    padding: 15px 25px;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #F79AC0;
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 9px #999;
+
+  }
+
+  button:hover {
+    background-color: #DBF3FA
+
+  }
+
+  button:active {
+    background-color: #7AD7F0;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
 }
