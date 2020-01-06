@@ -115,7 +115,6 @@ const createItem = function() {
       htmlText: null,
       htmlRemoveButton: null
     }
-
     items.push(object);
 
     let x = items.indexOf(object);
