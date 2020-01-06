@@ -134,7 +134,6 @@ const createItem = function() {
     items[x].htmlText.setAttribute("class", "completed");
     elements[x].append(items[x].htmlText);
 
-
     items[x].htmlRemoveButton = document.createElement("td");
     items[x].htmlRemoveButton.setAttribute("class", "remove");
     items[x].htmlRemoveButton.innerHTML = "X";
