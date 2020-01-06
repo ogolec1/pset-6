@@ -8,7 +8,6 @@ let elements = document.getElementsByClassName("row");
 let priorityButtons = document.getElementsByClassName("priority");
 let completedButtons = document.getElementsByClassName("completed");
 let removeButtons = document.getElementsByClassName("remove");
-
 window.onload = function() {
   document.getElementById("task-table").onclick = runModificationFunctions;
 
