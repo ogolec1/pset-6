@@ -1,20 +1,20 @@
 let items = [];
 
+let priorityChanged;
+let completionChanged;
+let itemRemoved;
+
 let elements = document.getElementsByClassName("row");
 let priorityButtons = document.getElementsByClassName("priority");
 let completedButtons = document.getElementsByClassName("completed");
 let removeButtons = document.getElementsByClassName("remove");
 
-let priorityChanged;
-let completionChanged;
-let itemRemoved;
 
 window.onload = function() {
   document.getElementById("task-table").onclick = runModificationFunctions;
 
   document.getElementById("submit-input").onclick = createItem;
 };
-
 
 const prioritizeItem = function() {
   priorityChanged = false;
@@ -134,7 +134,6 @@ const createItem = function() {
     items[x].htmlText.innerHTML = items[x].task;
     items[x].htmlText.setAttribute("class", "completed");
     elements[x].append(items[x].htmlText);
-
 
 
     items[x].htmlRemoveButton = document.createElement("td");
