@@ -96,7 +96,6 @@ const removeItem = function() {
     }
   }
 }
-
 const runModificationFunctions = function() {
   prioritizeItem();
   markAsComplete();
@@ -115,6 +114,7 @@ const createItem = function() {
       htmlText: null,
       htmlRemoveButton: null
     }
+
     items.push(object);
 
     let x = items.indexOf(object);
