@@ -4,31 +4,30 @@
 }
 
 body {
-	background-color: #FFE4FE;
+  background-color: #FFE4FE;
 }
 
 h1 {
-    text-align: center;
-    font-size: 80px;
-    margin-top: 15px;
-    color: #039BE5;
+  text-align: center;
+  font-size: 80px;
+  margin-top: 15px;
+  color: #039BE5;
 }
 
 table {
-    border: 2px solid;
-
-    margin-top: 60px;
-    margin-bottom: auto;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
+  border: 2px solid;
+  margin-top: 60px;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
 }
 
 td {
-    border: 4px solid;
+  border: 4px solid;
 }
 
-h3{
+h3 {
   text-align: cen;
   font-size: 15px;
   margin-top: 15px;
@@ -37,27 +36,25 @@ h3{
 }
 
 button {
-    padding: 15px 25px;
-    font-size: 20px;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    outline: none;
-    color: #F79AC0;
-    background-color: white;
-    border: none;
-    border-radius: 20px;
-    box-shadow: 0 9px #999;
+  padding: 15px 25px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #F79AC0;
+  background-color: white;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 9px #999;
+}
 
-  }
+button:hover {
+  background-color: #DBF3FA
+}
 
-  button:hover {
-    background-color: #DBF3FA
-
-  }
-
-  button:active {
-    background-color: #7AD7F0;
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
+button:active {
+  background-color: #7AD7F0;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
